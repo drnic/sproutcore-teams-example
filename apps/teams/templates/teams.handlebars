@@ -1,6 +1,6 @@
-{{#collection SC.TemplateCollectionView contentBinding="Teams.teamsController.content"}}
+{{#collection Teams.TeamCollectionView}}
   Team: {{content.name}}
-  {{#collection SC.TemplateCollectionView contentBinding=".parentView.content.players"}}
+  {{#collection Teams.PlayerCollectionView}}
     Player: {{content.name}}
   {{/collection}}
 {{/collection}}
